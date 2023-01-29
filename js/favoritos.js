@@ -19,7 +19,7 @@ const agregarFavoritos = (id) => {
     if (agregadoAFav(id)) {
         let pos = libros_favoritos.findIndex(item => item.id === id);
         libros_favoritos[pos].cantidad -= 1;
-        alert("Este libro ya ha sido agregado a favoritos!")
+        alert("Este libro ya ha sido agregado a favoritos!");
     } else {
         const libro = libros.find(item => item.id === id);
         libro.cantidad = 1;
